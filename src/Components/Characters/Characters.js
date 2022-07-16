@@ -3,7 +3,7 @@ import { useQuery } from "react-query";
 import Character from "./Character";
 
 export default function Characters() {
-    const [page, setPage] = useState(60);
+    const [page, setPage] = useState(40);
 
     const fetchCharacters = async ({ queryKey }) => {
         const response = await fetch(
